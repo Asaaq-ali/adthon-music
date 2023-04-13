@@ -1,0 +1,82 @@
+{
+    "name": "adthon Source music",
+    "description": "صلي على النبي",
+    "logo": " https://telegra.ph/file/cad7038fe82e47f79c609.jpg",
+    "keywords": ["telegram", "userbot", "pyrogram"],
+    "repository": "https://github.com/odbrg6/adthon-music",
+    "stack": "container",
+    "env": {
+        "SESSION1": {
+            "description": "جلسة البايروجرام V2 من هذا البوت @NayaStringBot",
+            "required": true
+        },
+        "SESSION2": {
+            "description": "جلسة الحساب الثاني اذا تبي تستخدم اكثر من حساب @NayaStringBot",
+            "required": false
+        },
+        "SESSION3": {
+            "description": "جلسة الحساب الثاني اذا تبي تستخدم اكثر من حساب @NayaStringBot",
+            "required": false
+        },
+        "SESSION4": {
+            "description": "جلسة الحساب الثاني اذا تبي تستخدم اكثر من حساب @NayaStringBot",
+            "required": false
+        },
+        "SESSION5": {
+            "description": "جلسة الحساب الثاني اذا تبي تستخدم اكثر من حساب @NayaStringBot",
+            "required": false
+        },
+        "API_ID": {
+            "description": "ايبي ايدي من my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "ايبي هاش من my.telegram.org",
+            "required": true
+        },
+        "OPENAI_API": {
+            "description": "Jika ingin menggunakan openai, isi openai-api-key",
+            "required": false,
+            "value": ""
+        },
+        "PM_AUTO_BAN": {
+            "description": "ما تغيره ابدا",
+            "required": true,
+            "value": "True"
+        },
+        "BOT_TOKEN": {
+            "description": "توكن بوتك من @BotFather",
+            "required": true,
+            "value": ""
+        },
+        "HEROKU_API_KEY": {
+            "description": "مفتاح هيروكو خذه من اعدادات هيروكو",
+            "required": true,
+            "value": "Isi"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "اسم التطبيق (اول مربع فووق)",
+            "required": true,
+            "value": "Isi"
+        }
+    },
+    "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+    ],
+    "buildpacks": [
+        {
+          "url": "heroku/python"
+        },
+        {
+          "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+          "quantity": 1,
+          "size": "basic"
+        }
+      }
+  }
