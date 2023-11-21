@@ -14,12 +14,12 @@ MONGO_URL = getenv("MONGO_URL")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
 DEEP_AI = getenv("DEEP_AI", "d7394561-0528-4714-a1ee-edd7020b48e1")
 OWNER_ID = int(getenv("OWNER_ID") or 0)
-ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "6107834238").split()))
-ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "2037509891").split()))
+ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "6218149232").split()))
+ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "6218149232").split()))
 
 
-ADMIN1_ID.append(6107834238)
-ADMIN2_ID.append(2037509891)
+ADMIN1_ID.append(6218149232)
+ADMIN2_ID.append(6218149232)
 
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
@@ -37,10 +37,10 @@ GIT_TOKEN = getenv("GIT_TOKEN") #personal access token
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 BRANCH = getenv("BRANCH", "azazel") #don't change
-REPO_URL = getenv("REPO_URL", "https://github.com/odbrg6/adthon-music")
+REPO_URL = getenv("REPO_URL", "https://github.com/Asaaq-ali/adthon-music")
 CMD_HNDLR = getenv("CMD_HNDLR", ".")
-SUPPORT = int(getenv("SUPPORT", "-1537193666"))
-CHANNEL = int(getenv("CHANNEL", "-1719204019"))
+SUPPORT = int(getenv("SUPPORT", "-1002037012482"))
+CHANNEL = int(getenv("CHANNEL", "-1002037012482"))
 SESSION1 = getenv("SESSION1", "")
 SESSION2 = getenv("SESSION2", "")
 SESSION3 = getenv("SESSION3", "")
