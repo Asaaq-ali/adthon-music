@@ -24,7 +24,7 @@ lottie
 numpy
 httpx
 heroku3
-requests==2.28.2
+requests
 motor==3.0.0
 opencv-python-headless
 psutil
@@ -53,7 +53,7 @@ telegraph
 uwuify
 wget
 pyaes==1.6.1
-pysocks==1.7.1
+pysocks
 aiosqlite>=0.16.0,<0.18.0
 Pillow
 git+https://github.com/Itz-fork/py-extract.git
